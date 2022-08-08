@@ -1,0 +1,9 @@
+n = int(input())
+l = list(input().split())
+m = int(input())
+k = list(input().split())
+
+s_1 = set(l)
+s_2 = set(k)
+
+print(len(s_1.union(s_2)))

@@ -1,0 +1,3 @@
+dist_stamp = set()
+[dist_stamp.add(input()) for _ in range(int(input()))]
+print(len(dist_stamp))

@@ -1,0 +1,6 @@
+a = int(input())
+SET_A = set(map(int, input().split()))
+b = int(input())
+SET_B = set(map(int, input().split()))
+
+print(len(SET_A.symmetric_difference(SET_B)))

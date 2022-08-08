@@ -1,0 +1,14 @@
+n = int(input())
+sets = set(map(int, input().split()))
+operations = int(input())
+
+for x in range(operations):
+  oper = input().split()
+  if oper[0] == "remove":
+    sets.remove(int(oper[1]))
+  elif oper[0] == "discard":
+    sets.discard(int(oper[1]))
+  else:
+    sets.pop()
+    
+print (sum(sets))
